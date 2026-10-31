@@ -4,7 +4,15 @@ Standalone source for the approved dark/lime Discount Mix design, including
 the compact homepage and pricing page. No build step or third-party packages
 are required.
 
-## View both pages
+## Online preview
+
+- [Landing page](https://noubahar.github.io/discount-mix-website-design/)
+- [Pricing](https://noubahar.github.io/discount-mix-website-design/pricing/)
+
+GitHub Pages publishes `main` from the repository root. The repository and
+preview are public; the original Discount Mixer production site is separate.
+
+## View both pages locally
 
 1. Download this repository with **Code → Download ZIP**, then extract it, or clone it.
 2. Install Node.js 18 or later if it is not already installed.
@@ -18,8 +26,8 @@ Open **http://localhost:3000** for the landing page and
 **http://localhost:3000/pricing/** for pricing. Keep the terminal open while
 reviewing. You do not need to run `npm install`.
 
-To share for review, give your colleague access to this private GitHub repository
-or send them its downloaded ZIP. GitHub's file browser displays source code;
+To share for review, send your colleague either online preview link above,
+or this repository's downloaded ZIP. GitHub's file browser displays source code;
 run the command above to see the actual website.
 
 ## Included
