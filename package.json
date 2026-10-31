@@ -1,0 +1,13 @@
+{
+  "name": "discount-mix-website-design",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone Discount Mix landing and pricing design review",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}
