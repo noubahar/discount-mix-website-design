@@ -45,8 +45,10 @@ Run `npm run check` to validate page assets and inline/external JavaScript.
 This repository contains design-review pages. Product illustrations remain
 temporary, and the original preview-only links use explanatory dialogs.
 Blog navigation is omitted here because this repository covers landing and
-pricing only. No Sanity credentials, production integrations, GitHub Actions,
-Pages configuration or automatic deployment are included.
+pricing only. No Sanity credentials, production integrations or GitHub Actions are included.
+A `.nojekyll` marker and relative asset/navigation paths support GitHub Pages
+from `main` / repository root when Pages is enabled in repository settings.
+Enabling Pages is a separate publication step; this source change alone does not enable it.
 
 The supplied Aconchego Test font is for private design review. A production
 webfont license is required before commercial launch; see `assets/fonts/README.txt`.

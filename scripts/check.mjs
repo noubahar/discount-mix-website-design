@@ -13,7 +13,9 @@ for (const name of ['index.html','pricing/index.html']) {
   for (const match of html.matchAll(/(?:src|href)=["']([^"']+)["']/g)) {
     const url=match[1];
     if(!url.includes('assets/')) continue;
-    const local=url.startsWith('/')?path.join(root,url):path.resolve(root,path.dirname(name),url);
+    if(url.startsWith('/assets/')) throw new Error(`${name}: root-only asset path is not GitHub Pages compatible`);
+    const base = html.includes('<base href="../">') ? root : path.resolve(root, path.dirname(name));
+    const local=url.startsWith('/')?path.join(root,url):path.resolve(base,url);
     await access(local);count++;
     if(local.endsWith('.js')) new Script(await readFile(local,'utf8'),{filename:local});
   }
